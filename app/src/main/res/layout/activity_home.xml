@@ -10,7 +10,7 @@ android:onClick="gotToLogin"
 tools:context=".Home_Activity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo_home"
         android:layout_width="213dp"
         android:layout_height="279dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +22,7 @@ tools:context=".Home_Activity">
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/nombre_app_home"
+        android:id="@+id/nombre_app_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -33,10 +33,10 @@ tools:context=".Home_Activity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_home" />
 
     <TextView
-        android:id="@+id/texto_Home"
+        android:id="@+id/textointroduccion_Home"
         android:layout_width="331dp"
         android:layout_height="88dp"
         android:layout_marginTop="36dp"
@@ -47,14 +47,14 @@ tools:context=".Home_Activity">
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_app_home" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre_app_" />
 
     }
 
     <TextView
-        android:id="@+id/texto_Home2"
-        android:layout_width="134dp"
-        android:layout_height="43dp"
+        android:id="@+id/texto_registrate_home"
+        android:layout_width="112dp"
+        android:layout_height="38dp"
         android:fontFamily="@font/alfa_slab_one"
         android:text="@string/registro_home"
         android:textColor="@color/rosado"
@@ -63,11 +63,11 @@ tools:context=".Home_Activity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto_Home"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintTop_toBottomOf="@+id/textointroduccion_Home"
+        app:layout_constraintVertical_bias="0.691" />
 
     <Button
-        android:id="@+id/boton_ingresar_login"
+        android:id="@+id/boton_ingresar_home"
         android:layout_width="332dp"
         android:layout_height="71dp"
         android:layout_marginBottom="120dp"
@@ -83,8 +83,11 @@ tools:context=".Home_Activity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto_Home"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintTop_toBottomOf="@+id/textointroduccion_Home"
+        app:layout_constraintVertical_bias="0.88"
+        android:layout_marginTop="4dp"
+        app:strokeColor="@color/blanco"
+        app:strokeWidth="3dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
