@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">El Refugio</string>
+    <string name="mi_nombre">Laura Valentina Guarin Sanchez y Katerin Lorena Guerrero Guevara</string>
+    <string name="introduccion">Inicia una nueva aventura con El Refugio y descubre una nueva forma de ver el mundo </string>
+    <string name="Boton_comienza">comienza</string>
+    <string name="registro_home">Registrate</string>
+    <string name="login_bienvenida">La aventura esta por iniciar,por favor inicia sesion</string>
+    <string name="Boton_ingresar">Ingresar</string>
+    <string name="recuperacion_contraseña">Recupera tu contraseña</string>
+    <string name="ingreso_google">Ingresa con Google</string>
+    <string name="creacion_cuenta">No tienes cuenta?</string>
+
+</resources>
