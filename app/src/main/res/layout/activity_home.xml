@@ -1,75 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/welcomeActivity"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/gris"
-android:onClick="gotToLogin"
-tools:context=".Home_Activity">
+    android:onClick="gotToLogin"
+    tools:context=".Home_Activity">
+
+    }
 
     <ImageView
         android:id="@+id/logo_home"
-        android:layout_width="213dp"
-        android:layout_height="279dp"
+        android:layout_width="251dp"
+        android:layout_height="293dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.084"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/nombre_app_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="290dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="serif"
         android:text="@string/app_name"
         android:textColor="@color/azul"
-        android:textSize="48sp"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.651"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_home" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_home"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textointroduccion_Home"
         android:layout_width="331dp"
         android:layout_height="88dp"
-        android:layout_marginTop="36dp"
+        android:fontFamily="serif"
         android:text="@string/introduccion"
         android:textAlignment="center"
         android:textColor="@color/azul"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_app_" />
-
-    }
+        app:layout_constraintTop_toTopOf="@+id/nombre_app_"
+        app:layout_constraintVertical_bias="0.297" />
 
     <TextView
         android:id="@+id/texto_registrate_home"
         android:layout_width="112dp"
         android:layout_height="38dp"
+        android:fontFamily="serif"
         android:text="@string/registro_home"
         android:textColor="@color/rosado"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textointroduccion_Home"
-        app:layout_constraintVertical_bias="0.691" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <Button
         android:id="@+id/boton_ingresar_home"
         android:layout_width="332dp"
         android:layout_height="71dp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="120dp"
         android:backgroundTint="@color/rosado"
-
+        android:fontFamily="serif"
         android:text="@string/Boton_comienza"
         android:textAlignment="center"
         android:textColor="@color/blanco"
@@ -81,8 +88,7 @@ tools:context=".Home_Activity">
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textointroduccion_Home"
-        app:layout_constraintVertical_bias="0.88"
-        android:layout_marginTop="4dp"
+        app:layout_constraintVertical_bias="0.653"
         app:strokeColor="@color/blanco"
         app:strokeWidth="3dp" />
 
