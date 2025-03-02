@@ -96,12 +96,12 @@
         app:layout_constraintVertical_bias="0.626" />
 
     <Button
-        android:id="@+id/boton_ingresar_home"
+        android:onClick="gotoingreso"
+        android:id="@+id/boton_ingresar_registro"
         android:layout_width="278dp"
         android:layout_height="70dp"
         android:layout_marginBottom="228dp"
         android:backgroundTint="@color/rosado"
-
         android:text="@string/Boton_ingresar"
         android:textAlignment="center"
         android:textColor="@color/blanco"
@@ -124,10 +124,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contraseña_usuario_login"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.407" />
 
     <TextView
         android:id="@+id/notienecuenta_login"
@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="44dp"
-
+        android:onClick="gotToRegistro2"
         android:text="@string/registro_home"
         android:textColor="@color/rosado"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -162,7 +162,6 @@
         android:layout_height="70dp"
         android:layout_marginBottom="88dp"
         android:backgroundTint="@color/blanco"
-
         android:text="@string/ingreso_google"
         android:textAlignment="center"
         android:textColor="@color/azul"

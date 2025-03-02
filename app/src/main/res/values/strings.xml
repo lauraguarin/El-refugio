@@ -9,5 +9,10 @@
     <string name="recuperacion_contraseña">Recupera tu contraseña</string>
     <string name="ingreso_google">Ingresa con Google</string>
     <string name="creacion_cuenta">No tienes cuenta?</string>
-
+    <string name="descripcion_deregistro">Completa el formulario para crear tu cuenta </string>
+<string name="enviar">enviar</string>
+    <string name="correo">lvguarin@ucompensar.edu.co</string>
+    <string name="telefono">3106449898</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="textoderecuperarcontraseña">Ingrese el corrreo electronico registrado en su cuenta,para recuperala.</string>
 </resources>

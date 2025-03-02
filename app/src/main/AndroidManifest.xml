@@ -21,9 +21,17 @@ xmlns:tools="http://schemas.android.com/tools">
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-    <activity android:name=".Home_Activity"/>
-    <activity android:name=".LoginActivity"/>
-    <activity android:name=".MainActivity"/>
+    <activity android:name=".Home_Activity"
+        android:exported="false"/>
+    <activity android:name=".LoginActivity"
+        android:exported="false"/>
+    <activity android:name=".RegistroActivity"
+        android:exported="false"/>
+    <activity android:name=".Recuperacion_contraseña_activity"
+        android:exported="false"/>
+    <activity android:name=".PefilActivity"
+        android:exported="false"/>
+
 </application>
 
 </manifest>
