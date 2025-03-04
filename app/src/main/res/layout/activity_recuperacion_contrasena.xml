@@ -8,25 +8,10 @@
     android:background="@color/gris"
     tools:context=".Recuperacion_contraseña_activity">
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="334dp"
-        android:layout_height="313dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015"
-        app:srcCompat="@drawable/logo" />
-
-
     <TextView
-        android:id="@+id/nombre_app_"
+        android:id="@+id/nombre_app_recuperarcontraseña"
         android:layout_width="290dp"
         android:layout_height="83dp"
-        android:layout_marginBottom="452dp"
         android:fontFamily="serif"
         android:text="@string/app_name"
         android:textColor="@color/azul"
@@ -36,41 +21,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/texto_aventura_login"
-        android:layout_width="339dp"
-        android:layout_height="123dp"
-        android:layout_marginBottom="268dp"
+        android:layout_width="329dp"
+        android:layout_height="89dp"
         android:fontFamily="serif"
         android:text="@string/textoderecuperarcontraseña"
         android:textAlignment="center"
         android:textColor="@color/azul"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/boton_Recuperacion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintVertical_bias="0.488" />
 
     <EditText
         android:id="@+id/editTextemail"
         style="@style/EditTextRounded"
-        android:layout_width="358dp"
-        android:layout_height="62dp"
+        android:layout_width="323dp"
+        android:layout_height="64dp"
         android:layout_marginBottom="44dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="text"
-        android:text="email"
-        android:textColor="@color/azul"
+        android:hint="@string/Correo_electronico"
+        android:textColorHint="@color/azul"
         app:layout_constraintBottom_toTopOf="@+id/boton_Recuperacion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.698"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/texto_aventura_login"
         app:layout_constraintVertical_bias="1.0" />
@@ -86,10 +80,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895"
+        app:layout_constraintVertical_bias="0.94"
         app:strokeColor="@color/blanco"
         app:strokeWidth="3dp" />
 

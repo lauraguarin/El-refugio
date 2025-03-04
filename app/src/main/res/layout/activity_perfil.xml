@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
              android:layout_height="match_parent"
     android:background="@color/gris">
+
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="147dp"
-        android:layout_height="146dp"
+        android:layout_width="123dp"
+        android:layout_height="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
@@ -28,10 +29,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.874"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/textonombredeperfil"
@@ -47,7 +48,23 @@
         app:layout_constraintHorizontal_bias="0.649"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nombre_app_"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.561" />
+
+    <TextView
+        android:id="@+id/textonombredeperfil2"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
+        android:fontFamily="serif"
+        android:text="@string/correo"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nombre_app_"
+        app:layout_constraintVertical_bias="0.657" />
 
     <TextView
         android:id="@+id/textotelefono"
@@ -67,8 +84,8 @@
 
     <ImageView
         android:id="@+id/imagendemicra"
-        android:layout_width="346dp"
-        android:layout_height="320dp"
+        android:layout_width="279dp"
+        android:layout_height="215dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -89,10 +106,10 @@
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textotelefono"
-        app:layout_constraintVertical_bias="0.966"
+        app:layout_constraintVertical_bias="1.0"
         app:strokeColor="@color/blanco"
         app:strokeWidth="3dp" />
 

@@ -10,16 +10,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="vertical"
         android:padding="20dp">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="292dp"
-            android:layout_height="175dp"
-            android:src="@drawable/logo" />
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/textView"
@@ -46,97 +47,102 @@
             android:id="@+id/editTextNombre"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:gravity="center"
             android:inputType="text"
-            android:text="Nombres"
-            android:textColor="@color/azul" />
+            android:textColor="@color/azul"
+            android:hint="@string/nombres"
+            android:textColorHint="@color/azul"/>
 
         <EditText
             android:id="@+id/editTextapellido"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:gravity="center"
             android:inputType="text"
-            android:text="Apellidos"
-            android:textColor="@color/azul" />
+            android:textColor="@color/azul"
+            android:hint="@string/apellidos"
+            android:textColorHint="@color/azul"/>
 
         <EditText
             android:id="@+id/editTextCorreoelectronico"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:gravity="center"
-            android:text="Correo Electronico"
             android:textColor="@color/azul"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:hint="@string/Correo_electronico"
+            android:textColorHint="@color/azul"/>
 
         <EditText
             android:id="@+id/editTexttelefono"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:ems="10"
             android:gravity="center"
             android:inputType="text"
-            android:text="Telefono"
-            android:textColor="@color/azul" />
+            android:textColor="@color/azul"
+            android:hint="@string/telefono"
+            android:textColorHint="@color/azul"/>
 
         <EditText
             android:id="@+id/editTextTextPassword"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="Contraseña"
-            android:textColor="@color/azul"/>
+            android:textColor="@color/azul"
+            android:hint="@string/contraseña"
+            android:textColorHint="@color/azul"/>
         <EditText
             android:id="@+id/editTextrepetircontraseña"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="repetir"
-            android:textColor="@color/azul"/>
+            android:textColor="@color/azul"
+            android:hint="@string/contraseña"
+            android:textColorHint="@color/azul"/>
 
         <CheckBox
             android:id="@+id/checkBox"
-
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:ems="10"
-            android:text="Terminos y Condiciones"
+            android:text="@string/terminos_y_condiciones"
             android:textColor="@color/azul"
            />
 
         <Button
-            android:onClick="gotoperfil"
+            android:onClick="gotoiniciarsesion"
             android:id="@+id/boton_ingresar_registro"
             android:layout_width="278dp"
             android:layout_height="70dp"
             android:layout_marginTop="27dp"
-            android:layout_marginBottom="228dp"
             android:backgroundTint="@color/rosado"
             android:text="@string/registro_home"
             android:textAlignment="center"
             android:textColor="@color/blanco"
             android:textSize="35sp"
+            android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -144,21 +150,39 @@
             app:strokeColor="@color/blanco"
             app:strokeWidth="3dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
         <TextView
-            android:onClick="gotoiniciarsesion"
-            android:id="@+id/texto_registrate_home"
-            android:layout_width="112dp"
-            android:layout_marginTop="20dp"
-            android:layout_height="38dp"
+            android:id="@+id/tv_ya_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="serif"
-            android:text="iniciar_sesion"
-            android:textColor="@color/rosado"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.565"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.808" />
+            android:text="@string/ya_tienes_cuenta"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textSize="16sp" />
+
+
+            <TextView
+                android:onClick="gotoiniciarsesion"
+                android:id="@+id/tv_re_login"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/inicia_sesi_n"
+                android:textAlignment="center"
+                android:textColor="@color/rosado"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
 </ScrollView>

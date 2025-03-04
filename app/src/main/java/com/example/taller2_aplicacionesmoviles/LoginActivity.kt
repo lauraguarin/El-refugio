@@ -18,6 +18,14 @@ class LoginActivity : AppCompatActivity() {
         );
         finish();
     };
+    fun gotorecuperarcontraseña(view: View?) {
+        startActivity(
+            Intent(this, Recuperacion_contraseña_activity::class.java).apply {
+                Intent.FLAG_ACTIVITY_SINGLE_TOP
+            }
+        );
+        finish();
+    };
     fun gotToRegistro2(view: View?) {
         startActivity(
             Intent(this, RegistroActivity::class.java).apply {

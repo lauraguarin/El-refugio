@@ -11,6 +11,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 private lateinit var editTextNombres: EditText
+private lateinit var editTextapellido: EditText
+private lateinit var editTextCorreoelectronico: EditText
+private lateinit var editTexttelefono: EditText
 private lateinit var buttonRegistro: Button
 private lateinit var sharedPreferences: SharedPreferences
 
@@ -24,6 +27,9 @@ class RegistroActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("Userdata", MODE_PRIVATE)
         // INICIALIZAR LAS VARIABLES DE VISTAS
         editTextNombres = findViewById(R.id.editTextNombre)
+        editTextapellido = findViewById(R.id.editTextapellido)
+        editTextCorreoelectronico = findViewById(R.id.editTextCorreoelectronico)
+        editTexttelefono = findViewById(R.id.editTexttelefono)
         buttonRegistro = findViewById(R.id.boton_ingresar_registro) // Corregido el findViewById
 
         // configuracion listener boton de registro
@@ -50,7 +56,8 @@ class RegistroActivity : AppCompatActivity() {
 
 
     private fun validarCampos(): Boolean {
-        val nombres = editTextNombres.text.toString().trim() // ajustar al modelo
+        val nombres = editTextNombres.text.toString().trim()
+
 
         if (nombres.isEmpty()) {
             Toast.makeText(this,"El campo Nombres es requerido",Toast.LENGTH_SHORT).show()
@@ -65,6 +72,9 @@ class RegistroActivity : AppCompatActivity() {
     private fun guardarDatosUsuario() {
         val editor = sharedPreferences.edit()
         editor.putString("nombre", editTextNombres.text.toString().trim())
+        editor.putString("apellidos",editTextapellido.text.toString().trim())
+        editor.putString("correo",editTextCorreoelectronico.text.toString().trim())
+        editor.putString("telefono",editTexttelefono.text.toString().trim())
         editor.apply()
         //todos como string porque aun no podemos hacerlo en back
         Log.d("Registro Activity","guardardatosuauarios :datos del usuario guardados")

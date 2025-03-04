@@ -12,7 +12,17 @@
     <string name="descripcion_deregistro">Completa el formulario para crear tu cuenta </string>
 <string name="enviar">enviar</string>
     <string name="correo">lvguarin@ucompensar.edu.co</string>
-    <string name="telefono">3106449898</string>
+    <string name="telefonos">3106449898</string>
     <string name="editar_perfil">Editar Perfil</string>
     <string name="textoderecuperarcontraseña">Ingrese el corrreo electronico registrado en su cuenta,para recuperala.</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
+    <string name="inicia_sesi_n">Inicia Sesión</string>
+    <string name="terminos_y_condiciones">Terminos y Condiciones</string>
+    <string name="Correo_electronico">correo electronico</string>
+    <string name="telefono">telefono</string>
+    <string name="contraseña">*****</string>
+    <string name="nombre_usuario">Nombre_usuario</string>
+
 </resources>

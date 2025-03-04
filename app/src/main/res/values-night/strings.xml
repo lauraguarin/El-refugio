@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
+    <string name="inicia_sesi_n">Inicia Sesión</string>
+    <string name="terminos_y_condiciones">Terminos y Condiciones</string>
+    <string name="apellidos" />
+    <string name="Correo_electronico" />
+    <string name="nombre_usuario">Nombre_usuario</string>
+</resources>

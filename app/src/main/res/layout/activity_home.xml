@@ -34,7 +34,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_home"
         app:layout_constraintVertical_bias="0.0" />
@@ -71,7 +71,6 @@
         app:layout_constraintVertical_bias="0.808" />
 
     <Button
-        android:onClick="gotToLogin"
         android:id="@+id/boton_ingresar_home"
         android:layout_width="332dp"
         android:layout_height="71dp"
@@ -79,6 +78,7 @@
         android:layout_marginBottom="120dp"
         android:backgroundTint="@color/rosado"
         android:fontFamily="serif"
+        android:onClick="gotToLogin"
         android:text="@string/Boton_comienza"
         android:textAlignment="center"
         android:textColor="@color/blanco"
@@ -87,10 +87,10 @@
         app:iconTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textointroduccion_Home"
-        app:layout_constraintVertical_bias="0.653"
+        app:layout_constraintVertical_bias="0.669"
         app:strokeColor="@color/blanco"
         app:strokeWidth="3dp" />
 
